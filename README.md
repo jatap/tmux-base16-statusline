@@ -4,6 +4,26 @@ Tmux statusline based on [base16-shell](https://github.com/chriskempson/base16-s
 
 > This project has been created forking the amazing [tmux-themepack](https://github.com/jimeh/tmux-themepack/issues) tmux plugin.
 
+---
+
+<p align="center"><img src="https://raw.githubusercontent.com/jatap/tmux-base16-statusline/master/src/assets/main.png"/></p>
+
+---
+
+## Screenshots
+
+### Base
+
+<p align="center"><img src="https://raw.githubusercontent.com/jatap/tmux-base16-statusline/master/src/assets/header-base.png"/></p>
+
+### Prompt
+
+<p align="center"><img src="https://raw.githubusercontent.com/jatap/tmux-base16-statusline/master/src/assets/header-prompt.png"/></p>
+
+### Copy
+
+<p align="center"><img src="https://raw.githubusercontent.com/jatap/tmux-base16-statusline/master/src/assets/header-copy.png"/></p>
+
 ## Installation
 
 ### Install using [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
