@@ -57,7 +57,20 @@ Tmux statusline based on [base16-shell](https://github.com/chriskempson/base16-s
 Select theme via `.tmux.conf` option:
 
         $ set -g @base16-statusline 'main'
-        $ set -g status-right "#{prefix_highlight} #[fg=yellow]%H:%M:%S #[fg=white]<CHAR2> #[fg=green]%d-%b-%y "
+
+```<CHAR1>``` can be configured on the ```status-left``` to separate ```session name``` to overwrite its default value:
+
+        $ set -g @base16-statusline-separator-session-name '@'
+
+```<CHAR2>``` can be configured on the ```status-left``` to separate ```panes number``` and ```active pane``` to overwrite its default value:
+
+        $ set -g @base16-statusline-main-separator '|'
+
+```<CHAR2>``` can also be used on the ```status-right``` as ```@main_separator```:
+
+        $ set -g status-right "#{prefix_highlight} #[fg=yellow]%H:%M:%S #[fg=white]#{@main_separator} #[fg=green]%d-%b-%y "
+
+> it's mandatory to add status right on the ~/.tmux.conf file to show prefix_highlight
 
 ## Plugin Support
 
@@ -87,4 +100,3 @@ Character | Image | Description
 ## TODO
 
 - [ ] Move ```status-right``` to the theme
-- [ ] Customize ```special characters``` on the config

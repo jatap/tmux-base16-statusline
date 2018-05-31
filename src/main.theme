@@ -9,7 +9,8 @@ set -g status-fg cyan
 set -g status-left-bg brightblack
 set -g status-left-fg green
 set -g status-left-length 40
-set -g status-left "#S #[fg=brightgreen] #[fg=yellow]#I #[fg=white]ﱞ #[fg=cyan]#P"
+
+set -g status-left "#S #[fg=brightgreen]#{@separator_session_name} #[fg=yellow]#I #[fg=white]#{@main_separator} #[fg=cyan]#P"
 
 # Right side of status bar
 set -g status-right-bg brightblack
