@@ -38,7 +38,7 @@ set -g status-justify centre
 set -g pane-border-fg 8
 
 # Pane number indicator
-set -g display-panes-colour green
+set -g display-panes-colour brightred
 set -g display-panes-active-colour red
 
 # Clock mode
