@@ -2,7 +2,7 @@
 
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-theme_option="@statusline"
+theme_option="@base16-statusline"
 default_theme='main'
 
 get_tmux_option() {

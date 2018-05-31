@@ -1,7 +1,8 @@
-# Tmux Themepack
+# Tmux Base16 Statusline
 
-A pack of various themes for Tmux.
+Tmux statusline based on [base16-shell](https://github.com/chriskempson/base16-shell).
 
+> This project has been created forking the amazing [tmux-themepack](https://github.com/jimeh/tmux-themepack/issues) tmux plugin.
 
 ## Installation
 
@@ -25,5 +26,8 @@ A pack of various themes for Tmux.
 
 You can pick and choose a theme via `.tmux.conf` option:
 
-- `set -g @statusline 'main'` (default)
-- `...`
+- `set -g @base16-statusline 'main'` (default)
+
+## TODO
+
+- [  ] Move ```status-right``` to the theme
