@@ -19,7 +19,7 @@ get_tmux_option() {
 
 main() {
   local theme="$(get_tmux_option "$theme_option" "$default_theme")"
-  tmux source-file "$CURRENT_DIR/${theme}.theme"
+  tmux source-file "$CURRENT_DIR/src/${theme}.theme"
 }
 
 cleanup() {
