@@ -24,6 +24,14 @@ Tmux statusline based on [base16-shell](https://github.com/chriskempson/base16-s
 
 <p align="center"><img src="https://raw.githubusercontent.com/jatap/tmux-base16-statusline/master/src/assets/header-copy.png"/></p>
 
+## Nerd Fonts Support
+
+> [Nerd Fonts](http://nerdfonts.com/)
+
+### Font used on the screenshoots
+
+> [Monoid](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Monoid/Retina/complete/Monoid%20Retina%20Nerd%20Font%20Complete.ttf)
+
 ## Installation
 
 ### Install using [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
@@ -55,14 +63,6 @@ Select ```tmux-prefix-highlight``` options via `.tmux.conf`:
         $ set -g @prefix_highlight_copy_mode_attr "fg=red,bg=black,bold"
         $ set -g @prefix_highlight_output_prefix ''
         $ set -g @prefix_highlight_output_suffix ''
-
-## Nerd Fonts Support
-
-> [Nerd Fonts](http://nerdfonts.com/)
-
-### Font used on the screenshoots
-
-> [Monoid](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Monoid/Retina/complete/Monoid%20Retina%20Nerd%20Font%20Complete.ttf)
 
 ### Characters referenced on the project
 
