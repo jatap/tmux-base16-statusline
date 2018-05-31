@@ -46,10 +46,21 @@ Select ```tmux-prefix-highlight``` options via `.tmux.conf`:
 
 ### Characters referenced on the project
 
-1. <sub>CHAR1</sub> - Used on the ```status-left``` after the ```session-name```: ```"\uf461"``` ![char1](https://raw.githubusercontent.com/jatap/tmux-base16-statusline/master/src/assets/char1.png)
-2. <sub>CHAR2</sub> - Used on the ```status-left``` and ```status-right``` as a separator: ```"\ufc5e"``` ![char2](https://raw.githubusercontent.com/jatap/tmux-base16-statusline/master/src/assets/char2.png)
-3. <sub>CHAR3</sub> - Used on the ```@prefix_highlight_prefix_prompt``` option: ```"\uf6d7"``` ![char3](https://raw.githubusercontent.com/jatap/tmux-base16-statusline/master/src/assets/char3.png)
-4. <sub>CHAR4</sub> - Used on the ```@prefix_highlight_copy_prompt``` option: ```"\uf0c5"``` ![char4](https://raw.githubusercontent.com/jatap/tmux-base16-statusline/master/src/assets/char4.png)
+<sub>CHAR1</sub>
+![char1](https://raw.githubusercontent.com/jatap/tmux-base16-statusline/master/src/assets/char1.png)
+Used on the ```status-left``` after the ```session-name```: ```"\uf461"```
+
+<sub>CHAR2</sub>
+![char2](https://raw.githubusercontent.com/jatap/tmux-base16-statusline/master/src/assets/char2.png)
+Used on the ```status-left``` and ```status-right``` as a separator: ```"\ufc5e"```
+
+<sub>CHAR3</sub>
+![char3](https://raw.githubusercontent.com/jatap/tmux-base16-statusline/master/src/assets/char3.png)
+Used on the ```@prefix_highlight_prefix_prompt``` option: ```"\uf6d7"```
+
+<sub>CHAR4</sub>
+![char4](https://raw.githubusercontent.com/jatap/tmux-base16-statusline/master/src/assets/char4.png)
+Used on the ```@prefix_highlight_copy_prompt``` option: ```"\uf0c5"```
 
 ## TODO
 
