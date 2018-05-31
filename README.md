@@ -85,3 +85,4 @@ Character | Image | Description
 ## TODO
 
 - [ ] Move ```status-right``` to the theme
+- [ ] Customize ```special characters``` on the config
