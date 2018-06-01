@@ -48,7 +48,7 @@ Tmux statusline based on [base16-shell](https://github.com/chriskempson/base16-s
 
 1. Add plugin to the list of TPM plugins in `.tmux.conf`:
 
-        $ set -g @plugin 'jatap/tmux-base16-statusline'
+        set -g @plugin 'jatap/tmux-base16-statusline'
 
 2. Hit `prefix + I` to fetch the plugin and source it. The plugin should now be working.
 
@@ -56,19 +56,19 @@ Tmux statusline based on [base16-shell](https://github.com/chriskempson/base16-s
 
 Select theme via `.tmux.conf` option:
 
-        $ set -g @base16-statusline 'main'
+        set -g @base16-statusline 'main'
 
 ```<CHAR1>``` can be configured on the ```status-left``` to separate ```session name``` to overwrite its default value:
 
-        $ set -g @base16-statusline-separator-session-name '@'
+        set -g @base16-statusline-separator-session-name '@'
 
 ```<CHAR2>``` can be configured on the ```status-left``` to separate ```panes number``` and ```active pane``` to overwrite its default value:
 
-        $ set -g @base16-statusline-main-separator '|'
+        set -g @base16-statusline-main-separator '|'
 
 ```<CHAR2>``` can also be used on the ```status-right``` as ```@main_separator```:
 
-        $ set -g status-right "#{prefix_highlight} #[fg=yellow]%H:%M:%S #[fg=white]#{@main_separator} #[fg=green]%d-%b-%y "
+        set -g status-right "#{prefix_highlight} #[fg=yellow]%H:%M:%S #[fg=white]#{@main_separator} #[fg=green]%d-%b-%y "
 
 > it's mandatory to add status right on the ~/.tmux.conf file to show prefix_highlight
 
@@ -78,14 +78,14 @@ Select theme via `.tmux.conf` option:
 
 Select ```tmux-prefix-highlight``` options via `.tmux.conf`:
 
-        $ set -g @prefix_highlight_bg black
-        $ set -g @prefix_highlight_fg red
-        $ set -g @prefix_highlight_prefix_prompt '<CHAR3>'
-        $ set -g @prefix_highlight_show_copy_mode 'on'
-        $ set -g @prefix_highlight_copy_prompt '<CHAR4> '
-        $ set -g @prefix_highlight_copy_mode_attr "fg=red,bg=black,bold"
-        $ set -g @prefix_highlight_output_prefix ''
-        $ set -g @prefix_highlight_output_suffix ''
+        set -g @prefix_highlight_bg black
+        set -g @prefix_highlight_fg red
+        set -g @prefix_highlight_prefix_prompt '<CHAR3>'
+        set -g @prefix_highlight_show_copy_mode 'on'
+        set -g @prefix_highlight_copy_prompt '<CHAR4> '
+        set -g @prefix_highlight_copy_mode_attr "fg=red,bg=black,bold"
+        set -g @prefix_highlight_output_prefix ''
+        set -g @prefix_highlight_output_suffix ''
 
 ### Characters referenced on the project
 
