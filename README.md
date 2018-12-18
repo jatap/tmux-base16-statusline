@@ -1,6 +1,6 @@
 # Tmux Base16 Statusline
 
-Tmux statusline based on [base16-shell](https://github.com/chriskempson/base16-shell). This project has been created forking the amazing [tmux-themepack](https://github.com/jimeh/tmux-themepack/issues) tmux plugin.
+Tmux statusline based on [base16-shell](https://github.com/chriskempson/base16-shell). This project has been created forking the amazing [tmux-themepack](https://github.com/jimeh/tmux-themepack) tmux plugin.
 
 ---
 
