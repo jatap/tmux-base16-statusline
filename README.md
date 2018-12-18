@@ -6,7 +6,7 @@ Tmux statusline based on [base16-shell](https://github.com/chriskempson/base16-s
 
 <p align="center"><img src="https://raw.githubusercontent.com/jatap/tmux-base16-statusline/master/src/assets/main.png"/></p>
 
-**ZSH theme**: [base16-gruvbox-dark-hard](https://github.com/chriskempson/base16-shell/blob/master/scripts/base16-gruvbox-dark-hard.sh)
+**Shell's default ANSI colors**: [base16-gruvbox-dark-hard](https://github.com/chriskempson/base16-shell/blob/master/scripts/base16-gruvbox-dark-hard.sh)
 
 ---
 
