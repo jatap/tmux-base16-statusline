@@ -22,12 +22,10 @@ set -g window-status-format " #I:#W#F "
 set -g window-status-current-format " #I:#W#F "
 
 # Current window status
-set -g window-status-current-bg red
-set -g window-status-current-fg black
+set -g window-status-current-style fg=black,bg=red
 
 # Window with activity status
-set -g window-status-activity-bg yellow # fg and bg are flipped here due to a
-set -g window-status-activity-fg brightblack  # bug in tmux
+set -g window-status-activity-style fg=brightblack,bg=yellow
 
 # Window separator
 set -g window-status-separator ""
@@ -36,10 +34,8 @@ set -g window-status-separator ""
 set -g status-justify centre
 
 # Pane border
-set -g pane-border-fg brightblack
-set -g pane-border-style bg=black
-set -g pane-active-border-fg brightblack
-set -g pane-active-border-style bg=black
+set -g pane-border-style fg=brightblack,bg=black
+set -g pane-active-border-style fg=brightblack,bg=black
 
 # Pane number indicator
 set -g display-panes-colour red
@@ -50,13 +46,10 @@ set -g clock-mode-colour red
 set -g clock-mode-style 24
 
 # Message
-set -g message-bg red
-set -g message-fg black
+set -g message-style fg=black,bg=red
 
 # Command message
-set -g message-command-bg default
-set -g message-command-fg default
+set -g message-command-style fg=default,bg=default
 
 # Mode
-set -g mode-bg red
-set -g mode-fg default
+set -g mode-style fg=default,bg=red
