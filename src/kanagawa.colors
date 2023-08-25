@@ -1,0 +1,28 @@
+# mode - fg
+# window status activity - bg
+theme_bg="#363646"
+theme_fg="#c8c093"
+theme_cyan="#7fb4ca"
+theme_gray="#727169"
+theme_magenta="#957fb8"
+theme_pink="#d27e99"
+theme_red="#ff5d62"
+theme_yellow="#e6c384"
+theme_orange="#ff9e3b"
+# window status current - fg
+# window active - bg
+theme_black="#16161d"
+# message - fg
+# command message - fg
+# pane border - bg
+# pane active border - bg
+theme_dark_1="#1f1f28"
+# window status - bg
+# pane border - fg
+# pane active border - fg
+theme_dark_2="#2a2a37"
+# status bar - bg
+theme_status="#363646"
+# status left - bg
+# status right - bg 
+theme_status_sides="#2a2a37"
