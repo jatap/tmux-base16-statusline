@@ -81,7 +81,8 @@ load_theme() {
   tmux set -g status-justify centre
 
   # Dim inactive panes
-  tmux set-window-option -g window-active-style "bg=${theme_black}"
+  tmux set -g window-active-style "bg=${theme_dark_1}"
+  tmux set -g window-style "bg=${theme_dark_2},dim"
 
   # Pane border
   tmux set -g pane-border-style "fg=${theme_dark_2},bg=${theme_dark_1}"

@@ -10,13 +10,14 @@ theme_red="#f38ba8"
 theme_yellow="#f9e2af"
 theme_orange="#fab387"
 # window status current - fg
-# window active - bg
 theme_black="#24273a"
+# window active - bg
 # message - fg
 # command message - fg
 # pane border - bg
 # pane active border - bg
 theme_dark_1="#1e1e2e"
+# window - bg
 # window status - bg
 # pane border - fg
 # pane active border - fg
