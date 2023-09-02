@@ -85,8 +85,11 @@ load_theme() {
   tmux set -g window-style "bg=${theme_dark_2},dim"
 
   # Pane border
-  tmux set -g pane-border-style "fg=${theme_dark_2},bg=${theme_dark_1}"
+  tmux set -g pane-border-style "fg=${theme_dark_1},bg=${theme_dark_2}"
   tmux set -g pane-active-border-style "fg=${theme_dark_2},bg=${theme_dark_1}"
+  tmux set -g pane-border-lines double
+  tmux set -g pane-border-indicators arrows
+  tmux set -g pane-border-status off
 
   # Pane number indicator
   tmux set -g display-panes-colour "${theme_red}"

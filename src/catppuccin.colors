@@ -14,12 +14,12 @@ theme_black="#24273a"
 # window active - bg
 # message - fg
 # command message - fg
-# pane border - bg
+# pane border - fg
 # pane active border - bg
 theme_dark_1="#1e1e2e"
 # window - bg
 # window status - bg
-# pane border - fg
+# pane border - bg
 # pane active border - fg
 theme_dark_2="#303446"
 # status bar - bg
