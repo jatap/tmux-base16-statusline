@@ -20,9 +20,9 @@ theme_dark_1="#1f1f28"
 # window - bg
 # window status - bg
 # pane border - bg
-# pane active border - fg
 theme_dark_2="#2a2a37"
 # status bar - bg
+# pane active border - fg
 theme_status="#363646"
 # status left - bg
 # status right - bg 
