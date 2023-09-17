@@ -16,6 +16,8 @@ mode_sync_prompt_option='@base16-statusline-mode-sync-prompt'
 default_mode_sync_prompt='   '
 mode_empty_prompt_option='@base16-statusline-mode-empty-prompt'
 default_mode_empty_prompt='   '
+pane_zoomed_prompt_option='@base16-statusline-pane-zoomed-prompt'
+default_pane_zoomed_prompt='   '
 
 get_tmux_option() {
   local option="$1"
@@ -53,9 +55,15 @@ modes() {
   set_tmux_option @mode_empty_prompt "$mode_empty_prompt"
 }
 
+zoom() {
+  local pane_zoomed_prompt="$(get_tmux_option "$pane_zoomed_prompt_option" "$default_pane_zoomed_prompt")"
+  set_tmux_option @pane_zoomed_prompt "$pane_zoomed_prompt"
+}
+
 main() {
   separators
   modes
+  zoom
   load_theme
 }
 
@@ -67,6 +75,7 @@ cleanup() {
   tmux set-option -gqu "$mode_copy_prompt_option"
   tmux set-option -gqu "$mode_sync_prompt_option"
   tmux set-option -gqu "$mode_empty_prompt_option"
+  tmux set-option -gqu "$pane_zoomed_prompt_option"
 }
 
 load_theme() {
@@ -114,7 +123,9 @@ load_theme() {
   # Modes
   local mode_style="#[fg=${theme_bg},bg=${theme_cyan}]"
   local mode_prompt="${mode_style}#{?client_prefix,#{@mode_prefix_prompt},#{?pane_in_mode,#{@mode_copy_prompt},#{?pane_synchronized,#{@mode_sync_prompt},#{@mode_empty_prompt}}}}$status_right_style"
-  tmux set -g status-right "$mode_prompt #[fg=${theme_fg}]%H:%M:%S #[fg=${theme_gray}]#{@main_separator} #[fg=${theme_pink}]%d-%b-%y "
+  local pane_zoomed_style="#[fg=${theme_bg},bg=${theme_yellow}]"
+  local pane_zoom_prompt="${pane_zoomed_style}#{?window_zoomed_flag,#{@pane_zoomed_prompt},}$status_right_style"
+  tmux set -g status-right "$pane_zoom_prompt$mode_prompt #[fg=${theme_fg}]%H:%M:%S #[fg=${theme_gray}]#{@main_separator} #[fg=${theme_pink}]%d-%b-%y "
   tmux set -g mode-style "${mode_style}"
 
   # Window status
